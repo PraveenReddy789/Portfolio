@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perosnal Porfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6c4f5d8d65.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" alt="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#Projects">Projects</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#Contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Data Engineer</p>
+            <h1>Hi, I'm <span>Praveen <br> Reddy</span><br>from India</h1>
+        </div>
+    </div>
+</div> 
+<!-- --------About-------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/praveen.jpg" alt="My Picture">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I am Praveen Reddy Yallayyagari, a recent graduate with expertise in Data Engineering and Big Data Development, proficient in PySpark, AWS services (S3, Glue, Lambda, Redshift), SQL, and Spark optimization. During my internship at Cognifyz Technologies Pvt. Ltd., I worked on ETL processes, deployed machine learning models, and improved data accuracy. My experience includes building data pipelines, ETL processes, and leveraging tools like Airflow, dbt, and Snowflake for large-scale data processing. I am passionate about solving complex challenges and continuously enhancing my skills in data engineering and analytics.</p>
+                
+                <br>
+                <!-- Tab titles -->
+                <div id="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('Education')">Education</p>
+                </div>
+                
+                <br>
+                
+                <!-- Tab contents -->
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>PySpark</span><br>For Handling Large Data</li>
+                        <li><span>Machine learning</span><br>Predicting the Data</li>
+                        <li><span>AWS</span><br>To Handle the data in cloud.</li>
+                    </ul>
+                </div>
+                
+                <div class="tab-contents" id="Experience">
+                    <ul>
+                        <li><span>Data Science Intern</span><br>During my internship at Cognifyz Technologies Pvt. Ltd., I worked on ETL processes, deployed machine learning models, and improved data accuracy. My experience includes building data pipelines, ETL processes, and leveraging tools like Airflow, dbt, and Snowflake for large-scale data processing.</li>
+                    </ul>
+                </div>
+                
+                <div class="tab-contents" id="Education">
+                    <ul>
+                        <li><span>Bachelor's in Computer Science and Engineering (Data Science)</span><br>Srinivasa Ramanujan Institute Of Technology</li>
+                        <li><span>Diploma in Mechanical Engineering</span><br>Siddartha Institute Of Engineering and Technology</li>
+                        <li><span>High School</span><br>Raman English Medium High School</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- -----------Projects---------->
+<div id="Projects">
+    <div class="container">
+        <h1 class="sub-title">Projects</h1>
+        <div class="projects-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Advanced Data Engineering Pipeline with dbt, Airflow, and Snowflake Integration</h2>
+                <p>Designed and implemented an end-to-end data pipeline using dbt and Apache Airflow, integrating Snowflake for
+                    scalable data processing and analysis.</p>
+                <a href="#">For More Info -> GitHub</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-link"></i>
+                <h2>Organ Macthing And Transplatation Using Blockchain and IPFS Technology</h2>
+                <p>Built a decentralized app on Ethereum with 98% organ match accuracy, 10,000+ registrations, enhanced security through blockchain authentication, and utilized AWS S3 and QuickSight for data storage and visualizations.</p>
+                <a href="#">For More Info -> GitHub</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>ETL/ELT Process to clean the unstructed data and stored it in AWS(S3)</h2>
+                <p>Designed an end to end Pipeline to automate the process of cleaning the unstructured data and using lambda functions after cleaning it will be stored in s3 automatically.</p>
+                <a href="#">For More Info -> GitHub</a>
+            </div>
+        </div>
+    </div>
+</div>
+ <!-- -------------PortFolio---------->
+ <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/etl.jpg" alt="Data Engineering Project">
+                <div class="layer">
+                    <h3>Data Engineering Project</h3>
+                    <p>Designed advanced end-to-end data pipeline using Snowflake, Airflow, and Streamlit.</p>
+                    <a href="#"><i class="fas fa-external-link-square-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/blockchain-7566579_640.jpg" alt="Organ Donation">
+                <div class="layer">
+                    <h3>Organ Donation</h3>
+                    <p>Built blockchain application for donors and patients to match organs in emergency situations.</p>
+                    <a href="#"><i class="fas fa-external-link-square-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/data transformation.jpg" alt="Data Cleaning Model">
+                <div class="layer">
+                    <h3>Data Cleaning Model</h3>
+                    <p>Designed an ETL pipeline to clean unstructured data from different sources.</p>
+                    <a href="#"><i class="fas fa-external-link-square-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+<!-- -------------contact------------ -->
+<div id="Contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-envelope"></i> praveenreddy.yallayyagari@gmail.com</p>
+                <p><i class="fas fa-phone-alt"></i> +91-9398242064</p><br>
+                <div class="social-icons">
+                    <a href="https://x.com/praveenreddyyg"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/praveenreddy-yallayyagari-dataengineer/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/praveenreddy_yallayyagari/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100008833181479"><i class="fab fa-facebook"></i></a>
+                </div>
+                <a href="images/PraveenReddy_Yallayyagari_Resume.pdf" download class="btn btn2">Download Resume/CV</a>
+            </div>
+
+            <!-- Right Section for the form -->
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="text" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2 submit-btn">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright &copy; Praveen Reddy 2024</p>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+        // Remove 'active-link' class from all tab links
+        for (var tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+
+        // Remove 'active-tab' class from all tab contents
+        for (var tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+
+        // Add 'active-link' class to the clicked tab link
+        event.currentTarget.classList.add("active-link");
+
+        // Add 'active-tab' class to the corresponding tab content
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyVaLn7npths6_5xJnSBzY2uBfqZtd0kB9slyVNJD7rvyiFHI9-7rJ8tsjb7v2Akr-_IA/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const submitButton = form.querySelector('button[type="submit"]');
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      submitButton.disabled=true;
+      submitButton.classList.add('loading');
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            submitButton.classList.remove('loading');
+            submitButton.textContent = 'Sent';
+            msg.innerHTML = "Message sent successfully!";
+            setTimeout(function(){
+                submitButton.disabled = false;
+                submitButton.textContent = 'Submit';
+                msg.innerHTML = "";
+            },5000)
+            form.reset()
+        })
+        .catch(error => {
+            submitButton.disabled = false;
+            submitButton.classList.remove('loading');
+            submitButton.textContent = 'Submit';
+            msg.innerHTML = "There was an error while sending the message"
+            console.error('Error!', error.message);
+        });
+    });
+</script>
+</body>
+</html>
